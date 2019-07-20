@@ -24,8 +24,13 @@ public class Person implements Observer {
 
 	@Override
 	public void update(Observable o, Object arg) {
-		// TODO Auto-generated method stub
+		// when you receive an update from the publisher,
+		// decide what you should do with the message
 		
+		System.out.println(this.name + " received a message from publisher!");
+		System.out.println(" The new temperature is: " + arg.toString());
+		
+		// arg = contains the message that came from the publisher
 	}
 	
 	
